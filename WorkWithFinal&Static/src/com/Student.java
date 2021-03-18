@@ -13,7 +13,7 @@ public class Student {
         System.out.println("Student id: " + cnt);
     }
 
-    public static  void showCount(){
+    public static void showCount(){
         System.out.println("all id: " + cnt);
     }
 
@@ -32,7 +32,7 @@ public class Student {
 }
 
 class StudentTest{
-    void firstExample(){
+    static void firstExample(){
         Student student1 = new Student("Ivan", 1);
         Student student2 = new Student("Petr", 3);
         Student student3 = new Student("Masha", 2);
@@ -40,10 +40,11 @@ class StudentTest{
         System.out.println(student1.name);
         System.out.println(Student.cnt);
         Student.showCount();
+
     }
 
 
     public static void main(String[] args) {
-
+        firstExample();
     }
 }
