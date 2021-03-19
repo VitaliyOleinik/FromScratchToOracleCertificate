@@ -1,3 +1,5 @@
+package ClassWork;
+
 public class Employee {
     public String name;
     public double salary;
