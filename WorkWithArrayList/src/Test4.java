@@ -9,12 +9,19 @@ public class Test4 {
         list.add(stringBuilder1);
         list.add(stringBuilder2);
         list.add(stringBuilder3);
+        list.add(new StringBuilder("Hi, there!"));
+        list.get(1).append("!");
         for(int i = 0; i < list.size(); i++){
             list.get(i).append("!!!");
         }
 
-        list.remove(2);
-        list.remove("Hi");
+        //list.remove(2);
+        //list.remove("Hi");
+
+        System.out.println(list.indexOf("Hello!!!"));
+
+        //list.clear();
+
         for(StringBuilder s: list){
             System.out.println(s + " ");
         }
